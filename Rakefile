@@ -1,3 +1,3 @@
 task :generate do
-  system("slidedown slides.md -t ~/GIT/ShangHaiOnRails/default > index.html")
+  system("slidedown slides.md -t #{File.expand_path('default')} > index.html")
 end
