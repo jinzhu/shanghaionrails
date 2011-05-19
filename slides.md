@@ -146,7 +146,7 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
 
 !SLIDE
 
-### 在其它方面的一些工具
+### 在其它方面的一些工具<br/><br/>
 
 <table>
   <tr>

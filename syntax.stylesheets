@@ -52,16 +52,20 @@ h1, h2 {
   font-size: 1em;
 }
 
+table th {
+  min-width: 100px;
+}
+
 table th, table td {
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: left;
   padding: 5px 10px;
-  line-height: 1.5em;
+  line-height: 1em;
 }
 
 span.note {
   color: #666;
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 
 .hll { background-color: #ffffcc }
