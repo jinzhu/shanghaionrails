@@ -56,7 +56,7 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
 
 !SLIDE
 
-### 服务器配置  ---  ThePlantProvisioning
+## 服务器配置  ---  ThePlantProvisioning
 * 简单的配置一下，例如Amazon Key, 数据库密码
 * ``cap provisioning:bootstrap`` 启动EC2
 * ``cap provisioning:provision`` 根据你的配置安装各种软件、Gem，配置Nginx, Postfix, RVM等.
@@ -64,7 +64,7 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
 
 !SLIDE
 
-### 备份中心  ---  [BackupIt](https://github.com/jinzhu/backupit)
+## 备份中心  ---  [BackupIt](https://github.com/jinzhu/backupit)
 * 把下面的配置扔到我们备份中心的配置文件里, 然后运行``rake deploy``.
 
 @@@ ruby
@@ -89,7 +89,7 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
 
 !SLIDE
 
-### 监控中心  --- Nagios.rb
+## 监控中心  --- Nagios.rb
 * 把下面的配置扔到我们的监控中心的配置文件里
 
 @@@ ruby
@@ -126,7 +126,7 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
 
 !SLIDE
 
-### JavaScript国际化  --- JsL10n
+## JavaScript国际化  --- JsL10n
 
 * 把下面的代码放到 locales 文件里，注意要以js.yml结尾.
 
@@ -146,7 +146,7 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
 
 !SLIDE
 
-### 在其它方面的一些工具<br/><br/>
+## 在其它方面的一些工具<br/><br/>
 
 <table>
   <tr>
@@ -195,8 +195,8 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
 
 # THANKS!
 
-### Jinzhu Zhang
-##### [ThePlant](http://theplant.jp) / Hang Zhou
+## Jinzhu Zhang
+#### [ThePlant](http://theplant.jp) / Hang Zhou
 * wosmvp@gmail.com
 * [github.com/jinzhu](http://github.com/jinzhu)
 * [twitter.com/zhangjinzhu](http://twitter.com/zhangjinzhu)
