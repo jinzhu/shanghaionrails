@@ -5140,7 +5140,11 @@ jQuery.extend( jQuery.easing,
   <span class="n">port</span> <span class="s1">'222'</span>
 
   <span class="n">check_mysql</span> <span class="ss">:user</span> <span class="o">=&gt;</span> <span class="s1">'app'</span><span class="p">,</span><span class="ss">:password</span> <span class="o">=&gt;</span> <span class="s1">'Mal2DsHaYVEoXlJ'</span><span class="p">,</span><span class="ss">:database</span> <span class="o">=&gt;</span> <span class="s1">'production'</span>
-  <span class="n">check_disk</span> <span class="s2">"/mnt/DATA"</span>
+  <span class="n">check_disk</span> <span class="s2">"/mnt/DATA"</span> <span class="k">do</span>
+      <span class="n">warning</span> <span class="k">do</span>
+            <span class="n">remote</span><span class="p">(</span><span class="s2">"rm -rf /mnt/DATA/tmp_files/"</span><span class="p">)</span>
+      <span class="k">end</span>
+  <span class="k">end</span>
   <span class="n">check_memcached</span>
 <span class="k">end</span>
 </pre></div><ul>

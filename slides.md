@@ -114,7 +114,11 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
       port '222'
 
       check_mysql :user => 'app',:password => 'Mal2DsHaYVEoXlJ',:database => 'production'
-      check_disk "/mnt/DATA"
+      check_disk "/mnt/DATA" do
+          warning do
+                remote("rm -rf /mnt/DATA/tmp_files/")
+          end
+      end
       check_memcached
     end
 
