@@ -106,7 +106,8 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
     server 'server1' do
       host '111.222.33.44'
       username 'app'
-      port '222'
+      logrotate "/home/app/app/current/log/production.log", :archive_path => "/media/data/logs", :keep_count => 10,
+                    :post_command => "touch /home/app/app/current/tmp/restart.txt"
     end
 
     server 'server2' do
@@ -116,9 +117,7 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
 
       check_mysql :user => 'app',:password => 'Mal2DsHaYVEoXlJ',:database => 'production'
       check_disk "/mnt/DATA" do
-          warning do
-                remote("rm -rf /mnt/DATA/tmp_files/")
-          end
+        warning { remote("rm -rf /mnt/DATA/tmp_files/") }
       end
       check_memcached
     end
