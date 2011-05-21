@@ -82,6 +82,7 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
 	      user      'user'
 	      password  'thePassword'
 	      databases 'database_for_staging'
+          tables 'users orders products'
       end
     end
 
