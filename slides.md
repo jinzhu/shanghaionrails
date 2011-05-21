@@ -106,6 +106,7 @@ _Jinzhu / [ThePlant](http://theplant.jp) / May, 2011_
     server 'server1' do
       host '111.222.33.44'
       username 'app'
+      check_http "http://theplant.jp"
       logrotate "/home/app/app/current/log/production.log", :archive_path => "/media/data/logs", :keep_count => 10,
                     :post_command => "touch /home/app/app/current/tmp/restart.txt"
     end
